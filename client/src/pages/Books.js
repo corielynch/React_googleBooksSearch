@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, {useState} from "react"
 import Form from "../components/Form"
 import Card from "../components/Cards"
 import api from "../utils/api"
@@ -24,6 +24,8 @@ function Book (){
             })
         })
     }
+
+    
     return (
         <>
              <Form search = {state.search} handleInputChange = {handleInputChange} handleSubmit= {handleSubmit} />
